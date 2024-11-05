@@ -13,7 +13,6 @@ use function PHPSTORM_META\type;
     curl_close($req);
     if ($res) {
       $data = json_decode($res,false);
-      // var_dump($data);
       $speed = $data->wind->speed;
       $deg = $data->wind->deg;
       $coutry = $data->sys->country;
